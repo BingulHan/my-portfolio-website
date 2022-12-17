@@ -1,0 +1,8 @@
+.box {
+   background-color: rgb(245, 115, 175);
+}
+
+.skill:hover {
+   transform: translateY(-0.55rem);
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+ }
