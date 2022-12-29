@@ -291,25 +291,15 @@
         margin-left: 72px;
       }
   
-      svg#rocket-smoke {
-        right: 120px;
-        transform: rotate(-5deg);
-      }
-    }
-  
-    @media screen and (max-width: 575px) {
-      svg#rocket-smoke {
-        display: none;
-        visibility: hidden;
-      }
     }
   </style>
   <mark>highlight</mark>
   <!-- Toolbar -->
   <div class="toolbar" role="banner">
-    <div class="gg-bell" style="margin-left: 10px;" onclick="alert('Bildirm yok!')">
+    <div style="flex: 0.55;">
     </div>
-    <span class="titletext" style="margin-left: 40%;">{{ name }}</span>
+  
+    <span class="titletext" style="">{{ name }}</span>
   
     <a href="#" style="color: #fff;">
       <span class="titletext">Contact</span>
@@ -318,7 +308,9 @@
     <a href="#" style="color: #fff;">
       <span class="titletext">Projects</span>
     </a>
-  
+    
+    <div style="flex: 0.4;">
+    </div>
     <a class="circle-link" title="Discord topluluğumuza katıl!" href="https://discord.gg/ZNt972pYr5" target="_blank"
       rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 245 240">
@@ -330,7 +322,10 @@
       </svg>
     </a>
   
+    <h5><span class="badge bg-primary">{{discordOnlineMemberCount}} Online</span></h5>
+
   </div>
+
   
   
   <div class="content" role="main">
