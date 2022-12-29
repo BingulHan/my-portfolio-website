@@ -16,9 +16,11 @@ export class MainComponent  {
 
   constructor(private reposService : ReposService) {
     //readJson()
+    
     this.repList = reposService.reposList
     fetch("https://discordapp.com/api/guilds/732983779110551622/widget.json").then(response => response.json()).then(out => {
        this.discordOnlineMemberCount = out.members.length; 
+      
     })
 
 

@@ -322,7 +322,9 @@
       </svg>
     </a>
   
-    <h5><span class="badge bg-primary">{{discordOnlineMemberCount}} Online</span></h5>
+    <h5 *ngIf="discordOnlineMemberCount >= 100"><span class="badge bg-primary">{{discordOnlineMemberCount}}+ Online</span></h5>
+    <h5 *ngIf="discordOnlineMemberCount < 100"><span class="badge bg-primary">{{discordOnlineMemberCount}} Online</span></h5>
+
 
   </div>
 
